@@ -217,6 +217,6 @@ ExtractTxnHistory2CSV <- function(pdf_file, pass_word, pages) {
 
 # User Input
 setwd("D:\Downloads")
-ExtractTxnHistory2CSV("enc-09176061480_1750602194.pdf",                  # "transaction_history.pdf"
-                      "atienza1480",                            # "surname_last-4-digits-of-mobtel"
+ExtractTxnHistory2CSV("",                  # "transaction_history.pdf"
+                      "",                            # "surname_last-4-digits-of-mobtel"
                       "1") # 2
