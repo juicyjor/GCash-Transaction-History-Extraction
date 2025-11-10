@@ -1,0 +1,14 @@
+# Python package requirements for the repository's helper scripts
+# Note: these are Python packages only. The following system packages are also required depending on which tools you use:
+# - Tesseract OCR (system binary) for pytesseract
+# - Poppler (pdftoppm) for pdf2image
+# - Java JDK for tabula-py / tabula
+
+pandas
+pdfplumber
+pdf2image
+pytesseract
+PyMuPDF
+tabula-py
+pdftables-api
+doctr
