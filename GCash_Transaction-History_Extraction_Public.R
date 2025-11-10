@@ -216,7 +216,13 @@ ExtractTxnHistory2CSV <- function(pdf_file, pass_word, pages) {
 }
 
 # User Input
-setwd("D:\Downloads")
+setwd("D:\\Downloads")
+# The PDF password must not be hard-coded. Please set it in the environment variable
+# GCASH_PDF_PASSWORD before running this script. This avoids embedding secrets in source.
+pass_word <- Sys.getenv("GCASH_PDF_PASSWORD")
+if (pass_word == "") {
+  stop("Please set the GCASH_PDF_PASSWORD environment variable before running this script.")
+}
 ExtractTxnHistory2CSV("",                  # "transaction_history.pdf"
-                      "",                            # "surname_last-4-digits-of-mobtel"
+                      pass_word,            # password read from environment
                       "1") # 2
